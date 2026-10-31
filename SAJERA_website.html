@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SAJERA | Luxury Gifts</title>
+<style>
+:root{--wine:#541327;--wine2:#741d38;--gold:#d8b46a;--cream:#fff8f0;--ink:#2b171d}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Georgia,'Times New Roman',serif;background:var(--cream);color:var(--ink)}
+header{background:var(--wine);color:#fff8f0;padding:18px 6%;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;border-bottom:2px solid var(--gold)}
+.logo{font-size:30px;letter-spacing:5px;color:var(--gold);font-weight:bold}.tag{font-family:Arial,sans-serif;font-size:11px;letter-spacing:3px;margin-top:4px}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:#fff8f0;text-decoration:none;font-family:Arial,sans-serif;font-size:13px}nav a:hover{color:var(--gold)}
+.cart-pill{border:1px solid var(--gold);padding:9px 13px;border-radius:30px;font-family:Arial,sans-serif;font-size:13px}
+.hero{min-height:420px;display:grid;grid-template-columns:1.05fr .95fr;background:linear-gradient(120deg,#3d0d1c,#701d36);color:white}
+.hero-copy{padding:70px 8%;align-self:center}.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:4px;font:12px Arial,sans-serif}
+h1{font-size:clamp(38px,5vw,65px);line-height:1.04;margin:18px 0}.hero p{font:15px/1.8 Arial,sans-serif;color:#f1dfe3;max-width:450px}
+.btn{display:inline-block;background:var(--gold);color:#35101b;padding:13px 22px;text-decoration:none;border:0;cursor:pointer;font:600 13px Arial,sans-serif;letter-spacing:.5px;border-radius:2px}
+.hero-img{min-height:330px;background:linear-gradient(0deg,rgba(50,5,20,.25),rgba(50,5,20,.1)),url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=1200&q=85') center/cover}
+.section{padding:55px 6%}.section-head{text-align:center;margin-bottom:28px}.section-head .eyebrow{color:var(--wine2)}h2{font-size:34px;color:var(--wine);margin:10px 0}.section-head p{font:14px Arial,sans-serif;color:#765e63}
+.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:28px}.category{padding:20px 10px;border:1px solid #e8d7c5;text-align:center;color:var(--wine);background:#fffdf9;font-size:17px}
+.products{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#fff;border:1px solid #eee0d4;overflow:hidden;display:flex;flex-direction:column}.card img{width:100%;height:220px;object-fit:cover;background:#f2e5df}.card-body{padding:16px;display:flex;flex-direction:column;gap:9px;flex:1}.card h3{margin:0;font-size:19px;color:var(--wine)}.desc{font:12px/1.5 Arial,sans-serif;color:#806e70;min-height:32px}.price{font: bold 17px Arial,sans-serif;color:#6a1730}.card button{width:100%;margin-top:auto}
+.banner{background:#f0e3d6;text-align:center;padding:38px 6%;border-top:1px solid #e2cda9;border-bottom:1px solid #e2cda9}.banner p{font:14px/1.7 Arial,sans-serif}
+footer{background:#2e0b16;color:#fff3e5;text-align:center;padding:35px 6%}.footer-logo{font-size:27px;letter-spacing:5px;color:var(--gold)}footer p{font:13px/1.7 Arial,sans-serif;color:#e8d4d8}
+.cart-box{max-width:650px;margin:20px auto;background:#fff;padding:20px;border:1px solid #e8d7c5;display:none}.cart-row{display:flex;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #eee}.cart-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}.whatsapp{background:#267c4b;color:white}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.hero-copy{padding:48px 7%}.hero-img{min-height:280px}.products{grid-template-columns:repeat(2,1fr)}.categories{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){header{padding:15px 5%}.logo{font-size:25px}.hero-copy{padding:40px 6%}.section{padding:40px 5%}.products{gap:10px}.card img{height:165px}.card-body{padding:11px}.card h3{font-size:16px}.desc{font-size:11px}.btn{padding:12px 14px}}
+</style>
+</head>
+<body>
+<header>
+  <div><div class="logo">SAJERA</div><div class="tag">GIFTS MADE MEMORABLE</div></div>
+  <nav><a href="#home">Home</a><a href="#bouquets">Bouquets</a><a href="#hampers">Hampers</a><a href="#gifts">Gifts</a><a href="#contact">Contact</a></nav>
+  <div class="cart-pill">🛍 Cart: <span id="cart-count">0</span></div>
+</header>
+<section class="hero" id="home">
+  <div class="hero-copy"><div class="eyebrow">A little luxury, a lot of love</div><h1>Make every moment<br>feel special.</h1><p>Thoughtfully curated bouquets, gift hampers and keepsakes for the people who mean the most.</p><a class="btn" href="#bouquets">EXPLORE THE COLLECTION</a></div>
+  <div class="hero-img" role="img" aria-label="Beautiful flower bouquet"></div>
+</section>
+<section class="section" id="bouquets">
+  <div class="section-head"><div class="eyebrow">Say it with flowers</div><h2>Flower Bouquets</h2><p>Beautiful blooms for every kind of love.</p></div>
+  <div class="products">
+    <article class="card"><img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?auto=format&fit=crop&w=700&q=80" alt="Pink flower bouquet"><div class="card-body"><h3>Blush Mini Bouquet</h3><div class="desc">A sweet little bouquet for everyday surprises.</div><div class="price">₹250</div><button class="btn" onclick="addToCart('Blush Mini Bouquet',250)">ADD TO CART</button></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1494972308805-463bc619d34e?auto=format&fit=crop&w=700&q=80" alt="Fresh roses"><div class="card-body"><h3>Classic Rose Bouquet</h3><div class="desc">A timeless way to say “I care”.</div><div class="price">₹299</div><button class="btn" onclick="addToCart('Classic Rose Bouquet',299)">ADD TO CART</button></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=700&q=80" alt="Elegant bouquet"><div class="card-body"><h3>Elegant Bloom Bouquet</h3><div class="desc">A graceful bunch for meaningful moments.</div><div class="price">₹499</div><button class="btn" onclick="addToCart('Elegant Bloom Bouquet',499)">ADD TO CART</button></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?auto=format&fit=crop&w=700&q=80" alt="Large flower arrangement"><div class="card-body"><h3>Grand Celebration Bouquet</h3><div class="desc">A statement bouquet for big occasions.</div><div class="price">₹500</div><button class="btn" onclick="addToCart('Grand Celebration Bouquet',500)">ADD TO CART</button></div></article>
+  </div>
+</section>
+<section class="section" id="hampers" style="background:#fffaf5">
+  <div class="section-head"><div class="eyebrow">A box full of happiness</div><h2>Gift Hampers</h2><p>Curated gifts to make someone smile.</p></div>
+  <div class="products">
+    <article class="card"><img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=700&q=80" alt="Wrapped gift"><div class="card-body"><h3>Little Joy Hamper</h3><div class="desc">A lovely gift box for small celebrations.</div><div class="price">₹300</div><button class="btn" onclick="addToCart('Little Joy Hamper',300)">ADD TO CART</button></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=700&q=80" alt="Gift box"><div class="card-body"><h3>Golden Moments Hamper</h3><div class="desc">A thoughtful collection with a luxe touch.</div><div class="price">₹550</div><button class="btn" onclick="addToCart('Golden Moments Hamper',550)">ADD TO CART</button></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&w=700&q=80" alt="Luxury gift"><div class="card-body"><h3>Signature Gift Box</h3><div class="desc">A special surprise for someone special.</div><div class="price">₹650</div><button class="btn" onclick="addToCart('Signature Gift Box',650)">ADD TO CART</button></div></article>
+    <article class="card"><img src="https://images.unsplash.com/photo-1513883049090-d0b7439799bf?auto=format&fit=crop&w=700&q=80" alt="Gift hamper"><div class="card-body"><h3>Premium Celebration Box</h3><div class="desc">A premium pick for birthdays and milestones.</div><div class="price">₹850</div><button class="btn" onclick="addToCart('Premium Celebration Box',850)">ADD TO CART</button></div></article>
+  </div>
+</section>
+<section class="section" id="gifts">
+  <div class="section-head"><div class="eyebrow">For the moments that matter</div><h2>Birthday & Anniversary Gifts</h2><p>Pick a little something that says a lot.</p></div>
+  <div class="categories"><div class="category">🎂 Birthday Surprises</div><div class="category">❤️ Anniversary Gifts</div><div class="category">🎀 Personalised Gifts</div><div class="category">✨ Just Because</div></div>
+  <div class="cart-box" id="cart-box"><h2 style="font-size:25px">Your Cart</h2><div id="cart-items"></div><p><strong>Total: ₹<span id="cart-total">0</span></strong></p><div class="cart-actions"><button class="btn whatsapp" onclick="orderWhatsApp()">ORDER ON WHATSAPP</button><button class="btn" onclick="clearCart()">CLEAR CART</button></div><p style="font:12px Arial,sans-serif;color:#806e70">Before ordering, set your WhatsApp number in the website code.</p></div>
+</section>
+<div class="banner"><div class="eyebrow">The SAJERA promise</div><h2>Every gift tells a story.</h2><p>Made with care. Wrapped with love. Remembered forever.</p></div>
+<footer id="contact"><div class="footer-logo">SAJERA</div><p>Gifts made memorable</p><p>For orders and enquiries, tap “Order on WhatsApp” after adding products to your cart.</p><p>© <span id="year"></span> SAJERA. All rights reserved.</p></footer>
+<script>
+const cart=[];
+function addToCart(name,price){cart.push({name,price});document.getElementById('cart-count').textContent=cart.length;renderCart();document.getElementById('cart-box').style.display='block';}
+function renderCart(){const items=document.getElementById('cart-items');items.innerHTML='';let total=0;cart.forEach((item,i)=>{total+=item.price;const row=document.createElement('div');row.className='cart-row';row.innerHTML='<span>'+item.name+'</span><span>₹'+item.price+' <button aria-label="Remove '+item.name+'" onclick="removeItem('+i+')" style="margin-left:8px;cursor:pointer">✕</button></span>';items.appendChild(row)});document.getElementById('cart-total').textContent=total;}
+function removeItem(i){cart.splice(i,1);document.getElementById('cart-count').textContent=cart.length;renderCart();if(!cart.length)document.getElementById('cart-box').style.display='none';}
+function clearCart(){cart.length=0;document.getElementById('cart-count').textContent='0';renderCart();document.getElementById('cart-box').style.display='none';}
+function orderWhatsApp(){if(!cart.length){alert('Please add a product first.');return;}const total=cart.reduce((s,x)=>s+x.price,0);const lines=cart.map(x=>'• '+x.name+' - ₹'+x.price).join('%0A');const message='Hello SAJERA! I would like to order:%0A'+lines+'%0A%0ATotal: ₹'+total+'%0AName:%0ADelivery location:';const phone='91XXXXXXXXXX';if(phone.includes('X')){alert('To enable WhatsApp orders, replace 91XXXXXXXXXX in the code with your WhatsApp number, including country code.');return;}window.open('https://wa.me/'+phone+'?text='+message,'_blank');}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
